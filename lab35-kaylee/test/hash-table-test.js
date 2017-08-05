@@ -1,28 +1,10 @@
 'use strict'
 
 const expect = require('chai').expect
-// const faker = require('faker')
 const HashTable = require('../lib/hash-table.js')
 const DLL = require('../lib/DLL.js')
 
 describe('hash table tests', function() {
-  // before(done => {
-  //   this.fakeKeys = [...Array(100)].map(key => key = faker.hacker.phrase())
-  //   console.log(this.fakeKeys);
-  //   done()
-  // })
-  // after(done => {
-  //   delete this.fakeKeys
-  //   done()
-  // })
-  // beforeEach(done => {
-  //   this.testHash = new HashTable()
-  //   done()
-  // })
-  // afterEach(done => {
-  //   this.hashTable = null
-  //   done()
-  // })
   describe('instantiating a new hash table', () => {
     it('should generate a new empty hash table', done => {
       let testHash = new HashTable()
